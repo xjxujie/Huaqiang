@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta http-equiv="Content-Type" content="; charset=" />
+        <meta name="copyright" content="" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width,maximum-scale=2.0, user-scalable=yes" />
+		<title>注册新会员 - 华强北商城</title>
+    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="../src/script/thirdplugins/require.js" async="true" defer data-main="../src/script/js/main.js" ></script>
+
+</head>
+
+<body>
+
+        <div id="registor-header"></div>
+
+    <div id="registor" style="width:980px;margin: 0 auto;">
+        <div class="regtop">
+            <div class="t_phone">
+                <p>手机注册</p>
+            </div>
+        </div>
+
+        <form method="post" action="http://10.31.155.143/Stage2/Huaqiang/php/registor.php" id="form1"  >
+
+            <div>
+                <em>手机号码：</em> 
+
+                <input type="text" class="phone"  name="phone" id="phone" />
+                <label id="phone-error" class="error" for="phone"></label>
+
+            </div>
+
+            <div>
+                <em>验证码：</em>
+                
+                <input type="text" class="yanzheng" name="yanzheng" id="yanzheng"   style="width:115px"/>
+                <label id="yanzheng-error" class="error" for="yanzheng"></label>
+
+
+                <p class="refresh clear">
+                        <img class="left" style="cursor: pointer;width:90px;height:30px" onclick="" alt="" src="https://login.okhqb.com/captcha/captchaImage.html?t=1">
+                        <b class="left">
+                            看不清？
+                            <a href="#" onclick="" style="color: #0066cd;">换一张</a>
+                        </b>
+                </p> 
+                   
+               
+            </div>
+
+            <div>
+                <em>手机验证码：</em>
+                
+                <input type="text" class="phoneyanzheng" name="phoneyanzheng" id="phoneyanzheng" >
+                <label id="phoneyanzheng-error" class="error" for="phoneyanzheng"></label>
+              
+                <p  class="getphoneyan">获取验证码</p>
+
+            </div>
+
+            <div>
+                <em>登录密码：</em>
+
+                <input type="password" class="password" name="password" id="password" >
+                <label id="password-error" class="error" for="password"></label>
+                
+            </div>
+
+            <div>
+                <em>确认密码：</em>
+                
+                <input type="password" class="repass" name="repass" id="repass"  />
+                <label id="repass-error" class="error" for="repass"></label>
+
+            </div>
+
+            <div class="server_agreement" style="width:310px;margin-left:107px">
+                    <input type="checkbox" name="hqb_protocol" checked=""/>
+                    我已阅读并同意
+                    <a href="#">《华强北商城服务协议》</a> 
+            </div>
+            
+            <div class="regist_submit">
+                    <input type="submit" name="submit" value="立即注册">
+            </div>
+            
+        </form>
+
+        <div class="uni_login_box">
+            <p class="uni_tt">已有账号，<a class="goto_sign" href="login.html">直接登录&gt;&gt;</a></p>
+            <ul class="uni_list">
+                <li><a class="qq" href="#" target="_blank">使用QQ登录</a></li>
+                <li><a class="xl" href="#" target="_blank">使用新浪微博登录</a></li>
+                <li><a class="al" href="#" target="_blank">使用支付宝登录</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="registor-footer"></div>
+</body>
+
+</html>
